@@ -18,7 +18,7 @@ import { Header } from '../../components/Header';
 import { Pagination } from '../../components/Pagination';
 import { Sidebar } from '../../components/Sidebar';
 
-const Dashboard: React.VFC = () => (
+const UserList: React.VFC = () => (
   <Box>
     <Header />
     <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
@@ -83,4 +83,4 @@ const Dashboard: React.VFC = () => (
   </Box>
 );
 
-export default Dashboard;
+export default UserList;
