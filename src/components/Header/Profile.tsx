@@ -1,13 +1,19 @@
 import { Avatar, Box, Flex, Text } from '@chakra-ui/react';
 
-export const Profile: React.VFC = () => (
+interface Props {
+  showProfileData?: boolean;
+}
+
+export const Profile: React.VFC<Props> = ({ showProfileData = true }) => (
   <Flex align="center">
-    <Box mr="4" textAlign="right">
-      <Text>Ayrton Souza</Text>
-      <Text color="gray.300" fontSize="small">
-        ayrtonsouza@icloud.com
-      </Text>
-    </Box>
+    {showProfileData && (
+      <Box mr="4" textAlign="right">
+        <Text>Ayrton Souza</Text>
+        <Text color="gray.300" fontSize="small">
+          ayrtonsouza@icloud.com
+        </Text>
+      </Box>
+    )}
     <Avatar
       size="md"
       name="Ayrton Souza"
